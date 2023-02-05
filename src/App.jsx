@@ -36,7 +36,7 @@ export class App extends React.Component {
             <input
               type="text"
               placeholder="Enter Text"
-              value={this.state.currentItem}
+              value={this.state.currentItem.string}
               onChange={this.handleInput}
             />
             <button type="submit">Add</button>
