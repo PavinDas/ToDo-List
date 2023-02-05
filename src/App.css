@@ -6,9 +6,10 @@ body {
   min-height: 500px;
   width: 400px;
   margin: 40px auto;
+  padding: 10px;
 }
 #to-do-form input {
-  background-color: rgb(17, 138, 175);
+  background-color: rgb(30, 84, 100);
   border: 0;
   width: 200px;
   height: 50px;
@@ -26,7 +27,9 @@ body {
   height: 50px;
   width: 80px;
   border-radius: 10px;
-  background-color: rgb(28, 169, 212);
+  border: 0;
+  margin-left: 20px;
+  background-color: rgb(101, 133, 26);
   cursor: pointer;
   font-weight: bolder;
   color: white;

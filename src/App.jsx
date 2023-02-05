@@ -1,6 +1,7 @@
 import "./App.css";
 
 import React from "react";
+import ListItems from "./Components/ListItems.js";
 
 export class App extends React.Component {
   constructor(props) {
@@ -27,6 +28,16 @@ export class App extends React.Component {
     e.preventDefault();
     const newItem = this.state.currentItem;
     console.log(newItem);
+    if (newItem.text !== "") {
+      const newItems = [...this.state.items, newItem];
+      this.setState({
+        items: newItems,
+        currentItem: {
+          text: "",
+          key: "",
+        },
+      });
+    }
   }
   render() {
     return (
@@ -42,6 +53,7 @@ export class App extends React.Component {
             <button type="submit">Add</button>
           </form>
         </header>
+        <ListItems items={this.state.items}/>
       </div>
     );
   }

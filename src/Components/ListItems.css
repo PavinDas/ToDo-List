@@ -1,0 +1,8 @@
+.list{
+    background-color: rgb(130, 82, 207);
+    color: white;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 5px;
+    max-width: 350px;
+}
